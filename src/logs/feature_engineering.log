@@ -1,0 +1,8 @@
+2025-02-16 00:23:16,233 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-16 00:23:16,257 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-16 00:23:16,280 - feature_engineering - DEBUG - Error during Tfidf Vectorization: np.nan is an invalid document, expected byte or unicode string.
+2025-02-16 00:24:54,749 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-16 00:24:54,775 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-16 00:24:55,182 - feature_engineering - DEBUG - text vectorization has completed:
+2025-02-16 00:25:28,161 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/preprocessed/train_tfidf.csv
+2025-02-16 00:26:00,212 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/preprocessed/test_tfidf.csv
