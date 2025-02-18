@@ -1,0 +1,4 @@
+2025-02-19 00:10:17,384 - model_evaluation - DEBUG - data is succesfully loaded!
+2025-02-19 00:10:17,745 - model_evaluation - DEBUG - model loaded successfully
+2025-02-19 00:10:18,407 - model_evaluation - DEBUG - model evaluation completed:
+2025-02-19 00:10:18,408 - model_evaluation - DEBUG - model saved succesfully

@@ -1,9 +1,0 @@
-2025-02-17 12:51:10,069 - model_evaluation - DEBUG - data is succesfully loaded!
-2025-02-17 12:51:10,428 - model_evaluation - DEBUG - model loaded successfully
-2025-02-17 12:51:11,056 - model_evaluation - DEBUG - model evaluation completed:
-2025-02-17 12:51:11,056 - model_evaluation - ERROR - file not found: reports/metrics.json
-2025-02-17 12:51:11,056 - model_evaluation - ERROR - model evaluation failed: [Errno 2] No such file or directory: 'reports/metrics.json'
-2025-02-17 12:51:49,677 - model_evaluation - DEBUG - data is succesfully loaded!
-2025-02-17 12:51:49,889 - model_evaluation - DEBUG - model loaded successfully
-2025-02-17 12:51:50,482 - model_evaluation - DEBUG - model evaluation completed:
-2025-02-17 12:51:50,483 - model_evaluation - DEBUG - model saved succesfully

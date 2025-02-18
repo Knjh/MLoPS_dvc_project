@@ -1,0 +1,10 @@
+2025-02-19 00:05:59,199 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-19 00:05:59,226 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-19 00:05:59,628 - feature_engineering - DEBUG - text vectorization has completed:
+2025-02-19 00:06:30,491 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/preprocessed/train_tfidf.csv
+2025-02-19 00:07:01,084 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/preprocessed/test_tfidf.csv
+2025-02-19 00:08:41,796 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-19 00:08:41,824 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-19 00:08:42,222 - feature_engineering - DEBUG - text vectorization has completed:
+2025-02-19 00:09:12,232 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/train_tfidf.csv
+2025-02-19 00:09:41,483 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/test_tfidf.csv

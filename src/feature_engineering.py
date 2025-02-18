@@ -82,8 +82,8 @@ def main():
 
           train_df, test_df = apply_vectorization(train_data, test_data, max_features)
 
-          save_data(train_df, os.path.join('./data', 'preprocessed', 'train_tfidf.csv'))
-          save_data(train_df, os.path.join('./data', 'preprocessed', 'test_tfidf.csv'))
+          save_data(train_df, os.path.join('./data', 'processed', 'train_tfidf.csv'))
+          save_data(train_df, os.path.join('./data', 'processed', 'test_tfidf.csv'))
 
      except Exception as e:
           logger.log("Error occured in feature engineering module: %s", e)

@@ -1,0 +1,5 @@
+2025-02-19 00:09:57,590 - model_training - DEBUG - data is succesfully loaded!
+2025-02-19 00:09:58,081 - model_training - DEBUG - initializing random forest model:
+2025-02-19 00:09:58,081 - model_training - DEBUG - model training started with 4166 sample:
+2025-02-19 00:10:02,042 - model_training - DEBUG - model training completed:
+2025-02-19 00:10:02,052 - model_training - DEBUG - model saved succesfully
