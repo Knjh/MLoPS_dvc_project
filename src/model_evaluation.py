@@ -96,11 +96,11 @@ def save_metrics(file_path: str, metrics: dict) -> None:
 
 def main():
      try:
-          test_data = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/preprocessed/test_tfidf.csv')
+          test_data = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/data/preprocessed/test_tfidf.csv')
           x_test = test_data.iloc[:,:-1].values
           y_test = test_data.iloc[:,-1].values
 
-          model_path = '/home/kanhaiya/MlopS/MLoPS_dvc_project/src/models/model.pkl'
+          model_path = '/home/kanhaiya/MlopS/MLoPS_dvc_project/models/model.pkl'
           model = load_model(model_path)
 
           metrics = predict_eval(x_test, y_test, model)

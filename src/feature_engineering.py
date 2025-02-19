@@ -1,5 +1,5 @@
 import pandas as pd
-import os
+import os, yaml
 import numpy as np
 from sklearn.model_selection import train_test_split
 import logging
@@ -24,6 +24,18 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
+
+# Load params
+def load_params(params_path:str)->dict:
+     try:
+          with open(params_path, 'r') as file:
+               params = yaml.safe_load(file)
+          logger.debug('parms are extracted from %s:', params_path)
+          return params
+     except FileNotFoundError as e:
+          logger.error('File not found: %s',e)
+     except Exception as e:
+          logger.error('Failed to fetch the parameters from:%s',e)
 
 # ingestion
 def load_data(data_path: str) -> pd.DataFrame:
@@ -75,10 +87,12 @@ def save_data(train_data: pd.DataFrame, data_path: str) -> None:
           raise
 def main():
      try:
-          max_features = 50
+          # max_features = 50
+          params = load_params('params.yaml')
+          max_features = params['feature_engineering']['max_features']
 
-          train_data = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/interim/train_processed.csv')
-          test_data  = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/interim/test_processed.csv')
+          train_data = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/data/interim/test_processed.csv')
+          test_data  = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/data/interim/test_processed.csv')
 
           train_df, test_df = apply_vectorization(train_data, test_data, max_features)
 

@@ -3,3 +3,15 @@
 2025-02-19 00:09:58,081 - model_training - DEBUG - model training started with 4166 sample:
 2025-02-19 00:10:02,042 - model_training - DEBUG - model training completed:
 2025-02-19 00:10:02,052 - model_training - DEBUG - model saved succesfully
+2025-02-19 11:57:32,037 - model_training - DEBUG - parms are extracted from params.yaml:
+2025-02-19 11:57:32,040 - model_training - DEBUG - Unexpected error occured: [Errno 2] No such file or directory: '/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/preprocessed/train_tfidf.csv'
+2025-02-19 11:57:32,041 - model_training - ERROR - Failed to complete the training: [Errno 2] No such file or directory: '/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/preprocessed/train_tfidf.csv'
+2025-02-19 11:59:13,050 - model_training - DEBUG - parms are extracted from params.yaml:
+2025-02-19 11:59:13,052 - model_training - DEBUG - Unexpected error occured: [Errno 2] No such file or directory: '/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/preprocessed/train_tfidf.csv'
+2025-02-19 11:59:13,052 - model_training - ERROR - Failed to complete the training: [Errno 2] No such file or directory: '/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/preprocessed/train_tfidf.csv'
+2025-02-19 12:00:37,763 - model_training - DEBUG - parms are extracted from params.yaml:
+2025-02-19 12:00:50,400 - model_training - DEBUG - data is succesfully loaded!
+2025-02-19 12:00:50,777 - model_training - DEBUG - initializing random forest model:
+2025-02-19 12:00:50,777 - model_training - DEBUG - model training started with 4166 sample:
+2025-02-19 12:00:54,098 - model_training - DEBUG - model training completed:
+2025-02-19 12:00:54,101 - model_training - DEBUG - model saved succesfully

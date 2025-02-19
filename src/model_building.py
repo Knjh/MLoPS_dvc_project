@@ -3,7 +3,7 @@ import os
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 import logging
-import pickle 
+import pickle , yaml
 
 # logging Module
 log_dir = 'logs'
@@ -27,6 +27,17 @@ fileHandler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(fileHandler)
 
+# Load params
+def load_params(params_path:str)->dict:
+     try:
+          with open(params_path, 'r') as file:
+               params = yaml.safe_load(file)
+          logger.debug('parms are extracted from %s:', params_path)
+          return params
+     except FileNotFoundError as e:
+          logger.error('File not found: %s',e)
+     except Exception as e:
+          logger.error('Failed to fetch the parameters from:%s',e)
 
 # ingestion
 def load_data(data_path: str) -> pd.DataFrame:
@@ -80,8 +91,10 @@ def save_model(file_path: str, model) -> None:
 
 def main():
      try:
-          params = {'n_estimators':25, 'random_state': 42}
-          train_data = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/preprocessed/train_tfidf.csv')
+          params = load_params('params.yaml')
+          params = params['model_building']
+
+          train_data = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/data/processed/train_tfidf.csv')
           x_train = train_data.iloc[:, :-1].values
           y_train = train_data.iloc[:,-1].values
 

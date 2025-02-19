@@ -3,6 +3,7 @@ import os
 import numpy as np
 from sklearn.model_selection import train_test_split
 import logging
+import yaml
 
 # logging Module
 log_dir = 'logs'
@@ -25,6 +26,18 @@ fileHandler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(fileHandler)
+
+# Load params
+def load_params(params_path:str)->dict:
+     try:
+          with open(params_path, 'r') as file:
+               params = yaml.safe_load(file)
+          logger.debug('parms are extracted from %s:', params_path)
+          return params
+     except FileNotFoundError as e:
+          logger.error('File not found: %s',e)
+     except Exception as e:
+          logger.error('Failed to fetch the parameters from:%s',e)
 
 
 # ingestion
@@ -54,7 +67,9 @@ def save_data(train_data: pd.DataFrame, test_data: pd.DataFrame, data_path: str)
           raise
 def main():
      try:
-          test_size = 0.2
+          # test_size = 0.2
+          params = load_params('params.yaml')
+          test_size = params['data_ingestion']['test_size']
           data_path = '/home/kanhaiya/MlopS/spam.csv'
           df = load_data(data_path)
           train_data, test_data = train_test_split(df, test_size=test_size, random_state=42)

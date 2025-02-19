@@ -8,3 +8,11 @@
 2025-02-19 00:08:42,222 - feature_engineering - DEBUG - text vectorization has completed:
 2025-02-19 00:09:12,232 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/train_tfidf.csv
 2025-02-19 00:09:41,483 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/test_tfidf.csv
+2025-02-19 11:54:02,992 - feature_engineering - DEBUG - parms are extracted from params.yaml:
+2025-02-19 11:54:02,995 - feature_engineering - DEBUG - Unexpected error occured: [Errno 2] No such file or directory: '/home/kanhaiya/MlopS/MLoPS_dvc_project/src/data/interim/train_processed.csv'
+2025-02-19 11:56:24,538 - feature_engineering - DEBUG - parms are extracted from params.yaml:
+2025-02-19 11:56:24,585 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-19 11:56:24,611 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-19 11:56:25,045 - feature_engineering - DEBUG - text vectorization has completed:
+2025-02-19 11:56:56,037 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/train_tfidf.csv
+2025-02-19 11:57:26,994 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/test_tfidf.csv
