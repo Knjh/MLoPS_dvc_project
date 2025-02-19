@@ -5,6 +5,8 @@ from sklearn.ensemble import RandomForestClassifier
 import logging
 import pickle , json
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
+import yaml
+from dvclive import Live
 
 # logging Module
 log_dir = 'logs'
@@ -27,6 +29,18 @@ fileHandler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(fileHandler)
+
+# Load params
+def load_params(params_path:str)->dict:
+     try:
+          with open(params_path, 'r') as file:
+               params = yaml.safe_load(file)
+          logger.debug('parms are extracted from %s:', params_path)
+          return params
+     except FileNotFoundError as e:
+          logger.error('File not found: %s',e)
+     except Exception as e:
+          logger.error('Failed to fetch the parameters from:%s',e)
 
 
 # ingestion
@@ -96,6 +110,8 @@ def save_metrics(file_path: str, metrics: dict) -> None:
 
 def main():
      try:
+          params = load_params('params.yaml')
+
           test_data = load_data('/home/kanhaiya/MlopS/MLoPS_dvc_project/data/preprocessed/test_tfidf.csv')
           x_test = test_data.iloc[:,:-1].values
           y_test = test_data.iloc[:,-1].values
@@ -104,6 +120,14 @@ def main():
           model = load_model(model_path)
 
           metrics = predict_eval(x_test, y_test, model)
+
+          with Live(save_dvc_exp = True) as live:
+               live.log_metric('accuracy:',metrics['accuracy'])
+               live.log_metric('precission:',metrics['precision'])
+               live.log_metric('recall:',metrics['recall'])
+
+               live.log_params(params)
+
           save_metrics('reports/metrics.json', metrics)
 
      except Exception as e:

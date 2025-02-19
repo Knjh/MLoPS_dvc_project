@@ -15,3 +15,9 @@
 2025-02-19 12:00:50,777 - model_training - DEBUG - model training started with 4166 sample:
 2025-02-19 12:00:54,098 - model_training - DEBUG - model training completed:
 2025-02-19 12:00:54,101 - model_training - DEBUG - model saved succesfully
+2025-02-19 12:29:50,034 - model_training - DEBUG - parms are extracted from params.yaml:
+2025-02-19 12:30:02,065 - model_training - DEBUG - data is succesfully loaded!
+2025-02-19 12:30:02,254 - model_training - DEBUG - initializing random forest model:
+2025-02-19 12:30:02,254 - model_training - DEBUG - model training started with 4166 sample:
+2025-02-19 12:30:05,994 - model_training - DEBUG - model training completed:
+2025-02-19 12:30:05,997 - model_training - DEBUG - model saved succesfully

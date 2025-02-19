@@ -16,3 +16,9 @@
 2025-02-19 11:56:25,045 - feature_engineering - DEBUG - text vectorization has completed:
 2025-02-19 11:56:56,037 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/train_tfidf.csv
 2025-02-19 11:57:26,994 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/test_tfidf.csv
+2025-02-19 12:28:45,197 - feature_engineering - DEBUG - parms are extracted from params.yaml:
+2025-02-19 12:28:45,233 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-19 12:28:45,263 - feature_engineering - DEBUG - data is succesfully loaded!
+2025-02-19 12:28:45,700 - feature_engineering - DEBUG - text vectorization has completed:
+2025-02-19 12:29:17,180 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/train_tfidf.csv
+2025-02-19 12:29:47,310 - feature_engineering - DEBUG - Data is succesfully saved in Folder: ./data/processed/test_tfidf.csv

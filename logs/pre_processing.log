@@ -10,3 +10,15 @@
 2025-02-19 00:05:49,999 - pre_processing - DEBUG - punctuation has removed
 2025-02-19 00:05:57,169 - pre_processing - DEBUG - stopwards and stemming has done
 2025-02-19 00:05:57,237 - pre_processing - DEBUG - preprocessed data saved successfully: ./data/interim
+2025-02-19 12:17:18,988 - pre_processing - DEBUG - data loaded properly
+2025-02-19 12:17:18,988 - pre_processing - DEBUG - starting preprocessing for DataFrame
+2025-02-19 12:17:18,991 - pre_processing - DEBUG - Target columns encoded
+2025-02-19 12:17:18,998 - pre_processing - DEBUG - Duplicates removed
+2025-02-19 12:17:19,034 - pre_processing - DEBUG - punctuation has removed
+2025-02-19 12:17:26,572 - pre_processing - DEBUG - stopwards and stemming has done
+2025-02-19 12:17:26,572 - pre_processing - DEBUG - starting preprocessing for DataFrame
+2025-02-19 12:17:26,574 - pre_processing - DEBUG - Target columns encoded
+2025-02-19 12:17:26,579 - pre_processing - DEBUG - Duplicates removed
+2025-02-19 12:17:26,611 - pre_processing - DEBUG - punctuation has removed
+2025-02-19 12:17:34,661 - pre_processing - DEBUG - stopwards and stemming has done
+2025-02-19 12:17:34,735 - pre_processing - DEBUG - preprocessed data saved successfully: ./data/interim

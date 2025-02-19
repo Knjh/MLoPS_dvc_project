@@ -8,3 +8,18 @@
 2025-02-19 12:01:53,336 - model_evaluation - DEBUG - model loaded successfully
 2025-02-19 12:01:53,852 - model_evaluation - DEBUG - model evaluation completed:
 2025-02-19 12:01:53,852 - model_evaluation - DEBUG - model saved succesfully
+2025-02-19 12:21:00,098 - model_evaluation - DEBUG - parms are extracted from params.yaml:
+2025-02-19 12:21:12,156 - model_evaluation - DEBUG - data is succesfully loaded!
+2025-02-19 12:21:12,279 - model_evaluation - DEBUG - model loaded successfully
+2025-02-19 12:21:12,661 - model_evaluation - DEBUG - model evaluation completed:
+2025-02-19 12:21:13,178 - model_evaluation - DEBUG - model saved succesfully
+2025-02-19 12:26:20,199 - model_evaluation - DEBUG - parms are extracted from params.yaml:
+2025-02-19 12:26:32,262 - model_evaluation - DEBUG - data is succesfully loaded!
+2025-02-19 12:26:32,374 - model_evaluation - DEBUG - model loaded successfully
+2025-02-19 12:26:32,713 - model_evaluation - DEBUG - model evaluation completed:
+2025-02-19 12:26:33,209 - model_evaluation - DEBUG - model saved succesfully
+2025-02-19 12:30:08,407 - model_evaluation - DEBUG - parms are extracted from params.yaml:
+2025-02-19 12:30:20,427 - model_evaluation - DEBUG - data is succesfully loaded!
+2025-02-19 12:30:20,541 - model_evaluation - DEBUG - model loaded successfully
+2025-02-19 12:30:21,075 - model_evaluation - DEBUG - model evaluation completed:
+2025-02-19 12:30:21,580 - model_evaluation - DEBUG - model saved succesfully
